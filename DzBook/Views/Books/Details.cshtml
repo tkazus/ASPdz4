@@ -1,0 +1,10 @@
+﻿@model DzBook.Models.Book
+@{
+    ViewData["Title"] = Model.Title;
+}
+
+<h1>@Model.Title</h1>
+<p class="text-muted">@Model.Author, @Model.Year — @Model.Genre</p>
+<p>@Model.Description</p>
+
+<a class="btn btn-secondary" asp-controller="Books" asp-action="Index">← Назад к каталогу</a>
